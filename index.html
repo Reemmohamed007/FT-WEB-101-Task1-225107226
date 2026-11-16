@@ -1,0 +1,98 @@
+<!--
+  Name: Reem Abdelkader
+  Student ID: 225107226
+  Course: FT-WEB-101 - Task 1 (Profile page)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reem Abdelkader | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="top">
+    <div class="title-row">
+      <h1>Reem Abdelkader</h1>
+      <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+
+    <nav class="bar" aria-label="Main">
+      <a class="bar-name" href="#top">Reem Abdelkader</a>
+      <ul class="bar-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about">
+      <img src="images/me.jpg" alt="Portrait of Reem Abdelkader smiling, wearing a grey hijab" width="200" height="200">
+      <p>
+        Hi, I'm Reem, a computer science student at New Mansoura University.
+        I enjoy solving problems with code, leading teams, and learning something new every semester.
+      </p>
+    </section>
+
+    <section id="interests">
+      <h2>What I do</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Skills</h3>
+          <ul>
+            <li>C# programming</li>
+            <li>Problem solving in C++</li>
+            <li>Python basics</li>
+            <li>Power BI dashboards</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Leadership</h3>
+          <ul>
+            <li>Vice President, Rally New Mansoura</li>
+            <li>Co-Head of PR, Microsoft Student Club</li>
+            <li>Organizer, Career Circle event at NMU</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Training &amp; activities</h3>
+          <ul>
+            <li>CIB summer training in Gen AI</li>
+            <li>Digital marketing training at Creativa</li>
+            <li>ICPC member</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Say hello</h2>
+      <form id="contact-form" action="#" method="get">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <input type="submit" value="Send">
+        <p id="hello" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Reem Abdelkader. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
